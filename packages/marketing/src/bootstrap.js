@@ -48,7 +48,8 @@ const mount = (el, { onNavigate, useBrowserHistory, initialPath }) => {
       const {pathname: nextPathname} = props;
       const pathname = router.urlService.path();
       if (pathname !== nextPathname) {
-        locationService.url(nextPathname)
+        locationService.url(nextPathname);
+        //state sync
       }
     },
   };

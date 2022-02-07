@@ -33,6 +33,10 @@ const devConfig = {
           singleton: true,
           requiredVersion: deps["react-dom"],
         },
+        "@uirouter/react": {
+          singleton: true,
+          requiredVersion: deps["@uirouter/react"],
+        },
       },
     }),
     new HtmlWebpackPlugin({
